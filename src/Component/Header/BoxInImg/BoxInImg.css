@@ -1,0 +1,8 @@
+.body{
+          background-image: url("../../../picture/girl.png");
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          background-size: contain;
+          background-position:100% 0 ;
+}
