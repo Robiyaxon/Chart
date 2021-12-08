@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Chart/static/css/main.749a23a7.chunk.css",
+    "main.js": "/Chart/static/js/main.0dcfd899.chunk.js",
+    "main.js.map": "/Chart/static/js/main.0dcfd899.chunk.js.map",
+    "runtime-main.js": "/Chart/static/js/runtime-main.280de5ac.js",
+    "runtime-main.js.map": "/Chart/static/js/runtime-main.280de5ac.js.map",
+    "static/js/2.26733c41.chunk.js": "/Chart/static/js/2.26733c41.chunk.js",
+    "static/js/2.26733c41.chunk.js.map": "/Chart/static/js/2.26733c41.chunk.js.map",
+    "static/js/3.b079bf94.chunk.js": "/Chart/static/js/3.b079bf94.chunk.js",
+    "static/js/3.b079bf94.chunk.js.map": "/Chart/static/js/3.b079bf94.chunk.js.map",
+    "index.html": "/Chart/index.html",
+    "static/css/main.749a23a7.chunk.css.map": "/Chart/static/css/main.749a23a7.chunk.css.map",
+    "static/js/2.26733c41.chunk.js.LICENSE.txt": "/Chart/static/js/2.26733c41.chunk.js.LICENSE.txt",
+    "static/media/baby.747a24b3.jpg": "/Chart/static/media/baby.747a24b3.jpg",
+    "static/media/BoxInImg.css": "/Chart/static/media/girl.79017472.png",
+    "static/media/pantone.2e50184c.jpg": "/Chart/static/media/pantone.2e50184c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.280de5ac.js",
+    "static/js/2.26733c41.chunk.js",
+    "static/css/main.749a23a7.chunk.css",
+    "static/js/main.0dcfd899.chunk.js"
+  ]
+}
