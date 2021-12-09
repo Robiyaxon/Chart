@@ -59,7 +59,7 @@
 }
 @media(min-width:0) and (max-width:800.9px) {
       .wrapper {
-            margin-top: 6rem;
+            margin-top: 0;
       }
       .Title {
             width: 90%;
