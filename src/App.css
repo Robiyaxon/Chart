@@ -54,7 +54,7 @@ body {
   }
 
   .jss12{
-    display: none;
+    display: none !important;
   }
 
   .makeStyles-drawerOpen-7,
@@ -63,7 +63,7 @@ body {
   }
 
   .MuiToolbar-regular{
-    position: absolute;
+    position: absolute !important;
   }
 
   .makeStyles-appBarShift-3 {
