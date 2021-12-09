@@ -10,6 +10,7 @@ import flag from "../../picture/flag.png"
 import LetterAvatars from '../Header/Avatar/Avatar'
 import SearchButton from '../Header/HeaderSearch/HeaderSearch'
 import style from './Navbar.module.css'
+import '../../App.css'
 export function Header(classes, open, handleDrawerOpen) {
   return <AppBar
     position="fixed"

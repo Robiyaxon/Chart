@@ -18,7 +18,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { NavLink } from 'react-router-dom';
 import { Content } from '../Header/Content/Content';
 import { Header } from './Header';
-// import bir from './header.svg'
+import '../../App.css'
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
