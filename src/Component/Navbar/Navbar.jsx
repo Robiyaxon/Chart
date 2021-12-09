@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   menuButton: {
-
     marginRight: 36,
   },
   hide: {
@@ -109,8 +108,9 @@ export default function Navbar() {
     { id: 3, to: "/xodimlar", title: "Xodimlar" },
     { id: 4, to: "/chiqish", title: "Chiqish" }
   ]
+  const widthNavbar=open ? style.widthNavbar : ''
   return (
-    <div className={classes.root}>
+    <div className={classes.root + " " + widthNavbar}>
       {Header(classes, open, handleDrawerOpen)}
       <Drawer
         variant="permanent"
