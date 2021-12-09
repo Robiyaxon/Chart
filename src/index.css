@@ -32,7 +32,7 @@ padding: 1rem 0 !important;
   height: 100%;
 }
 
-@media(min-width:0) and (max-width:600.9px){
+@media(min-width:0) and (max-width:800.9px){
   .makeStyles-content-10{
     position: absolute;
     width: 90%;

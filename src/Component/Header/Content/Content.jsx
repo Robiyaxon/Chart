@@ -10,10 +10,10 @@ export function Content(classes, open) {
     <React.Fragment >
     <main className={ a + " " + classes.content }  >
       <div className={classes.toolbar} />
-      <Typography paragraph>
+      <div>
         <ContentTitle />
-        <Route path='/home' exact render={() => <Diagramma />} />
-      </Typography>
+        <Route path='/Chart' exact render={() => <Diagramma />} />
+      </div>
       <Typography paragraph>
       </Typography>
     </main>

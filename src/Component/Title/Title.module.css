@@ -1,6 +1,10 @@
 .Title {
       width: 50%;
       padding: 2rem 3rem;
+      background-image: url(../../picture/girl.png);
+      background-repeat: no-repeat;
+      background-position:  100% 0;
+      background-size: 60% 90%;
       box-sizing: border-box;
       background-color: rgb(254, 244, 212);
       border-radius: 16px;
@@ -35,16 +39,16 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
+      margin-top: 1rem;
       justify-content: space-between;
 }
 
 
-
-@media(min-width:0) and (max-width:600px) {
+@media(min-width:0) and (max-width:750.9px){
       .Title {
             width: 90%;
-            margin-top: 4rem;
             padding: 1rem 1rem;
+            background-size: contain;
             border-radius: 13px;
             box-sizing: border-box;
             background-color: rgb(254, 244, 212);
@@ -52,7 +56,14 @@
             flex-direction: column;
             text-align: center;
       }
-
+}
+@media(min-width:0) and (max-width:800.9px) {
+      .wrapper {
+            margin-top: 6rem;
+      }
+      .Title {
+            width: 90%;
+      }
       .CarouselNamePage img {
             width: 90%;
       }
@@ -61,7 +72,9 @@
             width: 100%;
             justify-content: center;
       }
-
+      .Title h1{
+            font-size: 20px;
+      }
       .Title h1,
       .Title p {
             max-width: 100%;
@@ -82,7 +95,7 @@
       }
 }
 
-@media (min-width:601px) and (max-width:977.9px) {
+@media (min-width:801px) and (max-width:977.9px) {
       .Title {
             width: 95%;
       }

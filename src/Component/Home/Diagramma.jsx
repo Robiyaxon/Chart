@@ -21,12 +21,12 @@ export const data = {
   labels,
   datasets: [
     {
-      label: "",
+      label: "yil",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 5 })),
       borderColor: 'gold'
     },
     {
-      label: "",
+      label: "oy",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 5 })),
       borderColor: 'red',
     },
@@ -34,8 +34,8 @@ export const data = {
 };
 const map3 = [
   { id: 1, name: "Buyurtmalar", foiz: "+2.6%", summa: "18,765" },
-  { id: 1, name: "Kirim", foiz: "+0.2%", summa: "4,876" },
-  { id: 1, name: "Chiqim", foiz: "+1%", summa: "678" }
+  { id: 2, name: "Kirim", foiz: "+0.2%", summa: "4,876" },
+  { id: 3, name: "Chiqim", foiz: "+1%", summa: "678" }
 ]
 const map4 = map3.map(a => <div key={a.id} className={style.blockBox}>
   <div className={style.box}>
@@ -48,7 +48,7 @@ const map4 = map3.map(a => <div key={a.id} className={style.blockBox}>
 
     <h1>{a.summa}</h1>
   </div>
-  <BarChartIcon />
+  <BarChartIcon style={{color:"yellow"}} />
 </div>)
 export function Diagramma() {
   return (
@@ -62,7 +62,7 @@ export function Diagramma() {
           <CircleChart />
         </div>
         <div className={style.wrapper}>
-          <Line options={options} data={data} />
+          <Line options={options} data={data}  />
 
         </div>
       </div></>);

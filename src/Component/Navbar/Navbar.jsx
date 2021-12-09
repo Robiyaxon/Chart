@@ -83,7 +83,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
   },
   content: {
@@ -104,7 +103,7 @@ export default function Navbar() {
     setOpen(false);
   };
   const NavbarMap = [
-    { id: 0, to: "/home", title: "Bosh sahifa" },
+    { id: 0, to: "/Chart", title: "Bosh sahifa" },
     { id: 1, to: "/buyurtmalar", title: "Buyurtmalar" },
     { id: 2, to: "/kassa", title: "Kassa" },
     { id: 3, to: "/xodimlar", title: "Xodimlar" },

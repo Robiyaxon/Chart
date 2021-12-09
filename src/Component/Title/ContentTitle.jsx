@@ -5,10 +5,7 @@ import pantone from "../../picture/pantone.jpg"
 import baby from "../../picture/baby.jpg"
 import "./Flickity.css";
 import Flickity from "react-flickity-component";
-import BoxInImg from '../Header/BoxInImg/BoxInImg';
-
 const ContentTitle = () => {
-
   return (
     <div className={style.wrapper}>
       <div className={style.Title}>
@@ -23,7 +20,6 @@ const ContentTitle = () => {
           </Button>
         </div>
         <div>
-          <BoxInImg />
         </div>
       </div>
       <Carousel23 />
