@@ -44,15 +44,26 @@ body {
     padding: 0 !important;
   }
 
-  .makeStyles-drawerClose-8{
+  .makeStyles-drawerClose-8,
+  .jss10,
+  .jss8{
     position: absolute !important;
   }
   .makeStyles-drawerOpen-7 {
     position: absolute !important;
   }
 
-  .makeStyles-drawerOpen-7 {
+  .jss12{
+    display: none;
+  }
+
+  .makeStyles-drawerOpen-7,
+  .jss7 {
     width: 97% !important;
+  }
+
+  .MuiToolbar-regular{
+    position: absolute;
   }
 
   .makeStyles-appBarShift-3 {
