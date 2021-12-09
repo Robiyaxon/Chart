@@ -104,6 +104,12 @@
 }
 
 
+@media (min-width:0) and (max-width:800.9px) {
+          .dNone {
+                    display: none;
+          }
+}
+
 
 @media(min-width:0) and (max-width:699.9px) {
           .logo {
@@ -137,9 +143,7 @@
                     margin-top: 0;
           }
 
-          .dNone {
-                    display: none;
-          }
+
 }
 
 @media(min-width:0) and (max-width:800.9px) {
@@ -149,7 +153,5 @@
 
           .headerButton img {
                     display: none;
-                    
-
           }
 }

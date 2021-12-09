@@ -27,7 +27,8 @@ body {
   margin: 0 0 0 auto;
 }
 
-.makeStyles-drawerOpen-7 {
+.makeStyles-drawerOpen-7,
+.jss7 {
   height: 100% !important;
 }
 
@@ -36,7 +37,8 @@ body {
 }
 
 @media(min-width:0) and (max-width:800.9px) {
-  .makeStyles-content-10 {
+  .makeStyles-content-10,
+  .jss10 {
     position: absolute !important;
     width: 90% !important;
     display: flex;
@@ -49,7 +51,8 @@ body {
   .jss8{
     position: absolute !important;
   }
-  .makeStyles-drawerOpen-7 {
+  .makeStyles-drawerOpen-7,
+  .jss7 {
     position: absolute !important;
   }
 
@@ -72,11 +75,13 @@ body {
     width: 0 !important;
   }
 
-  .makeStyles-toolbar-9 {
+  .makeStyles-toolbar-9,
+  .jss9 {
     padding: 0 1rem;
   }
 
-  .makeStyles-orange-13 {
+  .makeStyles-orange-13,
+  .jss13 {
     display: none !important;
   }
 
@@ -88,7 +93,8 @@ body {
     margin: 0.5rem 0;
   }
 
-  .makeStyles-menuButton-4 {
+  .makeStyles-menuButton-4,
+  .jss4 {
     margin-right: 0 !important;
   }
 }
