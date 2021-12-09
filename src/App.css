@@ -5,24 +5,77 @@
   background-color: rgb(255, 193, 7) !important;
   border-radius: 50px !important;
 }
-#components-layout-demo-custom-trigger .trigger {
-  padding: 0 24px;
-  font-size: 18px;
-  line-height: 64px;
-  cursor: pointer;
-  transition: color 0.3s;
+body {
+  background-color: #161c24 !important;
 }
 
-#components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
+.MuiList-padding {
+  padding: 1rem 0 !important;
+  background-color: #161c24 !important;
+  box-shadow: rgb(0 0 0 / 12%) 0px 8px 16px 0px;
 }
 
-#components-layout-demo-custom-trigger .logo {
-  height: 32px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
+.MuiDivider-root {
+  display: none;
 }
 
-.site-layout .site-layout-background {
-  background: #fff;
+.MuiDrawer-paperAnchorTop {
+  width: 85%;
+}
+
+.MuiDrawer-paperAnchorTop {
+  margin: 0 0 0 auto;
+}
+
+.makeStyles-drawerOpen-7 {
+  height: 100% !important;
+}
+
+.MuiList-root {
+  height: 100%;
+}
+
+@media(min-width:0) and (max-width:800.9px) {
+  .makeStyles-content-10 {
+    position: absolute !important;
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  .makeStyles-drawerClose-8{
+    position: absolute !important;
+  }
+  .makeStyles-drawerOpen-7 {
+    position: absolute !important;
+  }
+
+  .makeStyles-drawerOpen-7 {
+    width: 97% !important;
+  }
+
+  .makeStyles-appBarShift-3 {
+    width: 0 !important;
+  }
+
+  .makeStyles-toolbar-9 {
+    padding: 0 1rem;
+  }
+
+  .makeStyles-orange-13 {
+    display: none !important;
+  }
+
+  .MuiDrawer-paperAnchorTop {
+    width: 100%;
+  }
+
+  .MuiToolbar-regular {
+    margin: 0.5rem 0;
+  }
+
+  .makeStyles-menuButton-4 {
+    margin-right: 0 !important;
+  }
 }

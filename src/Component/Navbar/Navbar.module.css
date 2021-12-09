@@ -1,6 +1,6 @@
 .logo {
           color: gold;
-        
+
           font-family: "Public Sans", sans-serif;
           line-height: 24px;
           justify-content: space-evenly;
@@ -110,14 +110,17 @@
                     line-height: 24px;
                     font-size: 25px;
           }
+
           .userBlock h2 {
-                   display: none;
+                    display: none;
           }
+
           .userBlock div {
                     width: 90%;
-                    display: flex;justify-content: center;
+                    display: flex;
+                    justify-content: center;
           }
-         
+
           .userBlock h2 {
                     width: 18%;
           }
@@ -134,16 +137,19 @@
                     margin-top: 0;
           }
 
-          .dNone{
+          .dNone {
                     display: none;
           }
 }
-@media(min-width:0) and (max-width:800.9px){
+
+@media(min-width:0) and (max-width:800.9px) {
           .userBlock {
                     max-width: 400px;
           }
+
           .headerButton img {
                     display: none;
-           
-           }
+                    
+
+          }
 }
