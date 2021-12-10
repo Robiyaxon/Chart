@@ -1,5 +1,6 @@
 .Title {
       width: 50%;
+      margin-top: -2rem;
       padding: 2rem 3rem;
       background-image: url(../../picture/girl.png);
       background-repeat: no-repeat;
@@ -39,7 +40,7 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      margin-top: 1rem;
+      margin-top: 0rem;
       justify-content: space-between;
 }
 

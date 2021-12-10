@@ -43,7 +43,7 @@ export function Header(classes, open, handleDrawerOpen) {
             <img src={flag} alt="" />
             <SimpleBadge />
             <SupervisorAccountIcon />
-            <LetterAvatars />
+            <LetterAvatars className={style.dNone}/>
           </div>
         </div>}
     </Toolbar>

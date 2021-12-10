@@ -24,7 +24,7 @@ export default function LetterAvatars() {
   const classes = useStyles();
 
   return (
-          <div className={classes.root}>
+          <div className={classes.root + " " + "dnone"} >
             <Avatar className={classes.orange}>R</Avatar>
           </div>
         );
