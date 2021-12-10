@@ -1,42 +1,46 @@
-import React, { useState } from 'react';
-import clsx from 'clsx'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
-import Drawer from '@material-ui/core/Drawer'
-import List from '@material-ui/core/List'
-import Divider from '@material-ui/core/Divider'
-import IconButton from '@material-ui/core/IconButton'
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
-import ChevronRightIcon from '@material-ui/icons/ChevronRight'
+
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import List from '@material-ui/core/List';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
+import style from "./Navbar/Navbar.module.css"
+import React, { useState } from 'react';
+import clsx from 'clsx'
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import style from "./Navbar.module.css"
 import AppsIcon from '@material-ui/icons/Apps';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { NavLink } from 'react-router-dom';
-import { Content } from '../Header/Content/Content';
-import { Header } from './Header';
-import '../../App.css'
+import { Header } from './Navbar/Header';
+import { Content } from './Header/Content/Content';
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    color: "white",
+    backgroundColor: "#161c24",
   },
   appBar: {
-
-    backgroundColor: "#161c24",
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: "#161c24",
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
-
     }),
   },
   appBarShift: {
     marginLeft: drawerWidth,
+    backgroundColor: "#161c24",
     width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -45,28 +49,28 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: 36,
+    backgroundColor: "#161c24",
   },
   hide: {
     display: 'none',
-
+    backgroundColor: "#161c24",
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    backgroundColor: "#161c24",
     whiteSpace: 'nowrap',
+    backgroundColor: "#161c24",
   },
   drawerOpen: {
-    position: "relative",
+          backgroundColor: "#161c24",
     width: drawerWidth,
-    backgroundColor: "#161c24",
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
   drawerClose: {
-    backgroundColor: "#161c24",
+          backgroundColor: "#161c24",
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -90,29 +94,54 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Navbar() {
+export default function Navbar23() {
   const classes = useStyles();
   const theme = useTheme();
   const screen2 = window.innerWidth < 800
-  const [open, setOpen] = useState(screen2 ? false : true);
+  const [open, setOpen] = React.useState(screen2 ? false : true);
+
+  const NavbarMap = [
+          { id: 0, to: "/Chart", title: "Bosh sahifa" },
+          { id: 1, to: "/buyurtmalar", title: "Buyurtmalar" },
+          { id: 2, to: "/kassa", title: "Kassa" },
+          { id: 3, to: "/xodimlar", title: "Xodimlar" },
+          { id: 4, to: "/chiqish", title: "Chiqish" }
+        
+        ]
   const handleDrawerOpen = () => {
     setOpen(true);
   };
+
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const NavbarMap = [
-    { id: 0, to: "/Chart", title: "Bosh sahifa" },
-    { id: 1, to: "/buyurtmalar", title: "Buyurtmalar" },
-    { id: 2, to: "/kassa", title: "Kassa" },
-    { id: 3, to: "/xodimlar", title: "Xodimlar" },
-    { id: 4, to: "/chiqish", title: "Chiqish" }
-  
-  ]
-  const widthNavbar23=open ? style.widthNavbar : ""
+
   return (
-    <div className={classes.root + " " + widthNavbar23}>
-      {Header(classes, open, handleDrawerOpen)}
+    <div className={classes.root}>
+      <CssBaseline />
+      <AppBar
+        position="fixed"
+        className={clsx(classes.appBar, {
+          [classes.appBarShift]: open,
+        })}
+      >
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={clsx(classes.menuButton, {
+              [classes.hide]: open,
+            })}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" noWrap>
+          {Header(classes, open, handleDrawerOpen)}
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {
@@ -127,14 +156,14 @@ export default function Navbar() {
         }}
       >
         <div className={classes.toolbar}>
-          <h1 className={style.logo}>IBF </h1>
-          <IconButton style={{ color: "white", fontWeight: "bolder" }} onClick={handleDrawerClose}>
+        <h1 className={style.logo}>IBF </h1>
+          <IconButton style={{color:"white"}} onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
         <Divider />
         <List>
-          {!open ? null : <div className={style.UserContainer}>
+        {!open ? null : <div className={style.UserContainer}>
             <div className={style.userBlock}>
               <>
               <h2> R</h2> <div>
@@ -155,9 +184,12 @@ export default function Navbar() {
         </List>
         <Divider />
       </Drawer>
-      {Content(classes, open)}
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <Typography paragraph>
+        {Content(classes, open)}
+        </Typography>
+      </main>
     </div>
   );
 }
-
-

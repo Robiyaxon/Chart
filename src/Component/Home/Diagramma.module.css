@@ -76,11 +76,17 @@
 }
 
 @media(min-width:0) and (max-width:700.9px) {
-   .wrapper , .wrapper2{
-      height: auto;
-      width: 95%;
+   .wrapper{
+      width: 90%;
       margin-bottom: 1.5rem;
    }
+
+   .wrapper2 {
+      width: 90%;
+      
+      margin-bottom: 1.5rem;
+   }
+   
 
    .box h1 {
      font-size: 22px;

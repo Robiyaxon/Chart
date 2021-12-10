@@ -32,7 +32,7 @@ export function Header(classes, open, handleDrawerOpen) {
           <SearchButton bol={open} />
           <div className={style.BtnGroup}>
             <img src={flag} alt="" />
-            <SimpleBadge />
+            <SimpleBadge  className={style.dNone}/>
             <SupervisorAccountIcon />
             <LetterAvatars />
           </div>

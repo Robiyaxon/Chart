@@ -48,8 +48,8 @@
       .Title {
             width: 90%;
             padding: 1rem 1rem;
-            background-size: contain;
             border-radius: 13px;
+            background-image: none;
             box-sizing: border-box;
             background-color: rgb(254, 244, 212);
             border-radius: 16px;
@@ -59,7 +59,7 @@
 }
 @media(min-width:0) and (max-width:800.9px) {
       .wrapper {
-            margin-top: 4rem;
+            margin-top: 0rem;
       }
       .Title {
             width: 90%;

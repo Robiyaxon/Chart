@@ -105,11 +105,9 @@
 
 
 @media (min-width:0) and (max-width:800.9px) {
-          .dNone {
-                    display: none;
-          }
-
-
+     .dNone{
+               display: none;
+     }
 }
 
 
@@ -136,11 +134,6 @@
           .UserContainer {
                     margin-bottom: 1rem;
           }
-
-          .BtnGroup {
-                    width: 40%;
-          }
-
           .headerButton {
                     margin-top: 0;
           }
