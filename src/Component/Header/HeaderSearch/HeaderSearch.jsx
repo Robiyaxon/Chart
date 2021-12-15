@@ -37,7 +37,7 @@ export default function SearchButton(props) {
                               {['top'].map((anchor) => (
                                         <React.Fragment key={anchor} >
                                                   <Button onClick={toggleDrawer(anchor, true)}>   <SearchIcon style={{ color: "white" }} />  </Button>
-                                                  <SwipeableDrawer className={props.bol ? '' : 'bor'}
+                                                  <SwipeableDrawer 
                                                             anchor={anchor}
                                                             open={state[anchor]}
                                                             onClose={toggleDrawer(anchor, false)}

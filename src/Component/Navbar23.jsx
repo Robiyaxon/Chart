@@ -184,12 +184,13 @@ export default function Navbar23() {
         </List>
         <Divider />
       </Drawer>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Typography paragraph>
+      <main className={classes.content}>\
+       <div className={classes.toolbar} />
+        <div >
         {Content(classes, open)}
-        </Typography>
-      </main>
+        </div> </main>
+     
+       
     </div>
   );
 }

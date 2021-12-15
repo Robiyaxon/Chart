@@ -4,6 +4,8 @@ import Typography from '@material-ui/core/Typography'
 import ContentTitle from './../../Title/ContentTitle'
 import style from "../../Title/Title.module.css"
 import { Diagramma } from '../../Home/Diagramma'
+import BuyurtmalarComponent from '../../Buyurtmalar/BuyurtmalarComponent'
+import KassaContainer from '../../Kassa/KassaContainer'
 export function Content(classes, open) {
   let a =open  ? style.dNone : null
   return (
@@ -13,6 +15,8 @@ export function Content(classes, open) {
       <div>
         <ContentTitle />
         <Route path='/Chart' exact render={() => <Diagramma />} />
+        <Route path='/buyurtmalar' exact render={() => <BuyurtmalarComponent/>} />
+        <Route path='/kassa' exact render={() => <KassaContainer />} />
       </div>
       <Typography paragraph>
       </Typography>

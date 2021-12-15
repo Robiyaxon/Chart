@@ -6,13 +6,37 @@ import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount'
 import SimpleBadge from './Badge'
-import flag from "../../picture/flag.png"
 import LetterAvatars from '../Header/Avatar/Avatar'
 import SearchButton from '../Header/HeaderSearch/HeaderSearch'
 import style from './Navbar.module.css'
 import '../../App.css'
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import { Flag } from './Flag'
+
 export function Header(classes, open, handleDrawerOpen) {
-  return <AppBar
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  return( <>
+ <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Roziya</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Fazilat</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Gulnura</MenuItem>
+      </Menu>
+   <AppBar
     position="fixed"
     className={clsx(classes.appBar, {
       [classes.appBarShift]: open,
@@ -31,21 +55,25 @@ export function Header(classes, open, handleDrawerOpen) {
         <div className={style.headerButton + " " + style.dNone}>
           <SearchButton bol={open} />
           <div className={style.BtnGroup}>
-            <img src={flag} alt="" />
+          <Flag/>
             <SimpleBadge  className={style.dNone}/>
-            <SupervisorAccountIcon />
+            <SupervisorAccountIcon style={{cursor:"pointer"}} onClick={handleClick}/>
             <LetterAvatars />
           </div>
         </div>
         : <div className={style.headerButton}>
           <SearchButton />
           <div className={style.BtnGroup}>
-            <img src={flag} alt="" />
+          <Flag/>
             <SimpleBadge />
-            <SupervisorAccountIcon />
+            <SupervisorAccountIcon style={{cursor:"pointer"}} onClick={handleClick} />
             <LetterAvatars className={style.dNone}/>
           </div>
         </div>}
     </Toolbar>
   </AppBar>;
-}
+  </>
+ 
+  )}
+
+  export default Header;

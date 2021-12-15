@@ -10,13 +10,18 @@
   width: 85%;
   margin: 0 0 0 auto;
 }
+.MuiPaper-elevation4{
+  box-shadow:none !important;
+}
 body {
   background-color: #161c24 !important;
 }
 .MuiList-root {
   padding: 1rem 0 !important;
   background-color: #161c24 !important;
-  box-shadow: rgb(0 0 0 / 12%) 0px 8px 16px 0px;
+}
+.jss9 {
+border: none !important;
 }
 /* 
 
