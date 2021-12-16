@@ -1,6 +1,5 @@
 .Title {
       width: 50%;
-      margin-top: -2rem;
       padding: 2rem 3rem;
       background-image: url(../../picture/girl.png);
       background-repeat: no-repeat;
@@ -40,7 +39,7 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      margin-top: 0rem;
+      margin-top: -8rem;
       justify-content: space-between;
 }
 
@@ -60,7 +59,7 @@
 }
 @media(min-width:0) and (max-width:800.9px) {
       .wrapper {
-            margin-top: 0rem;
+            margin-top: -6rem;
       }
       .Title {
             width: 90%;
@@ -117,7 +116,7 @@
       }
 .wrapper{
       justify-content: center;
-      margin-top: 2rem;
+    margin-top: -7rem;
 }
       .CarouselNamePage img {
             width: 100%;

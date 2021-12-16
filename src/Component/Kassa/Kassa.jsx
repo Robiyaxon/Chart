@@ -29,8 +29,7 @@ export const Kassa = (props) => {
     props.SetProductAC('')
     props.SetPriceAC('')
     props.SetCommentAC('')
-
-    if (props.addNewName.length === 0 || props.addNewProduct.length === 0 || props.addNewPrice.length === 0 || props.addNewComment === 0) {
+    if (props.addNewName.length === '' || props.addNewProduct.length === '' || props.addNewPrice.length === '' || props.addNewComment === '') {
       setOpen(true);
     } else {
       props.AddNewReportAC(props.addNewName, props.addNewProduct, props.addNewPrice, props.addNewComment, 'Kirim')
@@ -42,7 +41,7 @@ export const Kassa = (props) => {
     props.SetProductAC('')
     props.SetPriceAC('')
     props.SetCommentAC('')
-    if (props.addNewName.length === 0 || props.addNewProduct.length === 0 || props.addNewPrice.length === 0 || props.addNewComment === 0) {
+    if (props.addNewName.length === '' || props.addNewProduct.length === '' || props.addNewPrice.length === '' || props.addNewComment === '') {
       setOpen(true);
     } else {
       props.AddNewReportAC(props.addNewName, props.addNewProduct, props.addNewPrice, props.addNewComment, 'Chiqim')

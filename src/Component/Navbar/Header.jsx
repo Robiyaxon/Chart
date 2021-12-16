@@ -32,9 +32,9 @@ export function Header(classes, open, handleDrawerOpen) {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Roziya</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Fazilat</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"grey"}}>Gulnura</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Roziya</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Fazilat</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Gulnura</MenuItem>
       </Menu>
    <AppBar
     position="fixed"

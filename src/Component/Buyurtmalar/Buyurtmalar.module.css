@@ -112,6 +112,7 @@
           margin-left: 10px;
           text-align: center;
 
+          overflow-wrap: anywhere;
 
       }
       
@@ -119,17 +120,74 @@
           width: 20%;
           text-align: center;
 
-
+          overflow-wrap: anywhere;
       }
       
       .price{
           width: 15%;
           text-align: center;
-
+          overflow-wrap: anywhere;
       }
       
       .comment{
           width: 25%;
           text-align: center;
-
+          overflow-wrap: anywhere;
       }
+      @media(min-width:0px) and (max-width:600.9px) {
+        .inp_group input {
+            width: 90%;
+            margin: 1rem 0;
+            font-size: 16px;
+        }
+        .status {
+           display: none;
+        }
+        .inp_group {
+            justify-content: center;
+        }
+    
+        .btn_group {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+    
+        }
+    
+        .btn_group button {
+            width: 40%;
+        }
+    
+        .report_body {
+            width: 90%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            overflow: auto;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+        }
+        .name,
+        .product,
+        .comment,
+        .status,
+        .price {
+            text-align: center;
+        }
+    
+        .title {
+            padding: 10px 10px 5px;
+            font-size: 14px;
+        }
+        /* .th {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width: 100%;
+            height: 56px;
+            margin: 0 auto;
+        }
+        .report{
+            width: 100%;
+        } */
+    }

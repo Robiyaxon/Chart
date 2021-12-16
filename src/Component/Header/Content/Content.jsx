@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Typography from '@material-ui/core/Typography'
 import ContentTitle from './../../Title/ContentTitle'
 import style from "../../Title/Title.module.css"
 import { Diagramma } from '../../Home/Diagramma'
@@ -18,8 +17,6 @@ export function Content(classes, open) {
         <Route path='/buyurtmalar' exact render={() => <BuyurtmalarComponent/>} />
         <Route path='/kassa' exact render={() => <KassaContainer />} />
       </div>
-      <Typography paragraph>
-      </Typography>
     </main>
     </React.Fragment>
   )

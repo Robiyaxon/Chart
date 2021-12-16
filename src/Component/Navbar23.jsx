@@ -14,7 +14,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import style from "./Navbar/Navbar.module.css"
-import React, { useState } from 'react';
+import React from 'react';
 import clsx from 'clsx'
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import AppsIcon from '@material-ui/icons/Apps';

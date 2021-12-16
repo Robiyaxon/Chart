@@ -1,4 +1,4 @@
-import React, { createClass } from "react";
+import React from "react";
 import "../../App.css"
 function getRandomInt(min, max) {
           return Math.floor(Math.random() * (max - min)) + min;
@@ -23,8 +23,8 @@ var BarChart2 = React.createClass({
           },
           populateArray: function () {
                     var data = [],
-                              series = 5,//getRandomInt(2, 10),
-                              serieLength = 5;//getRandomInt(2, 10);
+                              series = 5,
+                              serieLength = 5;
 
                     for (var i = series; i--;) {
                               var tmp = [];
@@ -154,7 +154,7 @@ var Charts = React.createClass({
                                                                                 if (layered && !self.props.horizontal) {
                                                                                           //console.log(sortedSerie, serie, sortedSerie.indexOf(item));
                                                                                           style['right'] = ((sortedSerie.indexOf(item) / (serie.length + 1)) * 100) + '%';
-                                                                                          // style['left'] = (itemIndex * 10) + '%';
+                              
                                                                                 }
 
                                                                                 return (

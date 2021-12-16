@@ -10,7 +10,7 @@ const initialState = {
     addNewPrice: '',
     addNewComment: '',
     report: [
-        { id: 1, name: 'User12', product: 'qoshiq', price: 12000 + ' so`m', comment: 'Qoshiq yetishmayapti', status:'Chiqim' }
+        { id: 1, name: 'chef', product: 'qoshiq', price: 12000 + ' so`m', comment: 'Qoshiq yetishmayapti', status:'Chiqim' }
     ]
 }
 

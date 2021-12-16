@@ -23,6 +23,7 @@ body {
 .jss9 {
 border: none !important;
 }
+
 /* 
 
 
@@ -108,6 +109,12 @@ border: none !important;
   .dnone{
     display: none !important;
   }
+  .makeStyles-drawerClose-9 {
+  position: absolute !important;
+  }
+  .makeStyles-content-11{
+    padding: 0 !important;
+  }
   /* .makeStyles-drawerClose-8 {
     position: absolute !important;
     border: 2px solid red;
@@ -116,7 +123,9 @@ border: none !important;
   .makeStyles-drawerOpen-7 {
     width: 80% !important;
     border: 2px solid rgb(82, 18, 18);
-  }
+  }.makeStyles-content-11 {
+    padding: 0 !important;
+    }
 
 
 
