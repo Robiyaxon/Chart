@@ -12,32 +12,32 @@ function Alert(props) {
   
   const writeName = (event) => {
     let text = event.target.value
-    props.SetNameAC(text)
+    props.SetNameAC1(text)
   }
   const writeProduct = (event) => {
     let text = event.target.value
-    props.SetProductAC(text)
+    props.SetProductAC1(text)
   }
   const writePrice = (event) => {
     let text = event.target.value
-    props.SetPriceAC(text)
+    props.SetPriceAC1(text)
   }
   const writeComment = (event) => {
     let text = event.target.value
-    props.SetCommentAC(text)
+    props.SetCommentAC1(text)
   }
 
 
   const addNewReport = () => {
-    props.SetNameAC('')
-    props.SetProductAC('')
-    props.SetPriceAC('')
-    props.SetCommentAC('')
+    props.SetNameAC1('')
+    props.SetProductAC1('')
+    props.SetPriceAC1('')
+    props.SetCommentAC1('')
 
     if (props.addNewName.length === 0 || props.addNewProduct.length === 0 || props.addNewPrice.length === 0 || props.addNewComment === 0) {
       setOpen(true);
     } else {
-      props.AddNewReportAC(props.addNewName, props.addNewProduct, props.addNewPrice, props.addNewComment)
+      props.AddNewReportAC1(props.addNewName, props.addNewProduct, props.addNewPrice, props.addNewComment)
     }
   }
   const reportMap = props.report.map(r => <div key={r.id} className={moduleName.report}>
