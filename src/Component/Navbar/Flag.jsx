@@ -22,9 +22,9 @@ export const Flag = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>English</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Uzbek</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>German</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}}>Uzbek</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"gold"}}>English</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}}>German</MenuItem>
       </Menu>
       <img src={flag} style={{cursor:"pointer"}} onClick={handleClick} alt="" />
     </div>

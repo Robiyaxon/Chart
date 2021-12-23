@@ -44,9 +44,9 @@ export default function LetterAvatars() {
         onClose={handleClose}
         
       >
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Robiya</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}>Home</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}} >Settings</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}}>Robiya</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}}>Home</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}} >Settings</MenuItem>
       </Menu>
      <div className={classes.root + " " + "dnone"} >
             <Avatar style={{cursor:"pointer"}} onClick={handleClick} className={classes.orange}>R</Avatar>

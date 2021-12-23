@@ -111,7 +111,7 @@
           width: 20%;
           margin-left: 10px;
           text-align: center;
-
+color: #fff;
           overflow-wrap: anywhere;
 
       }
@@ -119,13 +119,14 @@
       .product{
           width: 20%;
           text-align: center;
-
+          color: #fff;
           overflow-wrap: anywhere;
       }
       
       .price{
           width: 15%;
           text-align: center;
+          color: #fff;
           overflow-wrap: anywhere;
       }
       
@@ -133,6 +134,7 @@
           width: 25%;
           text-align: center;
           overflow-wrap: anywhere;
+          color: #fff;
       }
       @media(min-width:0px) and (max-width:600.9px) {
         .inp_group input {
@@ -179,15 +181,4 @@
             padding: 10px 10px 5px;
             font-size: 14px;
         }
-        /* .th {
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            width: 100%;
-            height: 56px;
-            margin: 0 auto;
-        }
-        .report{
-            width: 100%;
-        } */
     }

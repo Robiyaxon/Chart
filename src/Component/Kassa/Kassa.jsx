@@ -2,6 +2,7 @@ import React from 'react'
 import moduleName from './Kassa.module.module.css'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import { Redirect } from 'react-router-dom';
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
@@ -64,6 +65,9 @@ export const Kassa = (props) => {
 
     setOpen(false);
   };
+  if (!props.isAuth) {
+    return <Redirect to={'/login'}/>
+}
   return (
     <>
      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>

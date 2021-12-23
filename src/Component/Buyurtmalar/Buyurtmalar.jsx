@@ -2,11 +2,14 @@ import React from 'react'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import moduleName from './Buyurtmalar.module.css'
+import { Redirect } from 'react-router-dom';
 
 function Alert(props) {
+ 
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
  const Buyurtmalar = (props) => {
+  
   const writeName = (event) => {
     let text = event.target.value
     props.SetNameAC(text)
@@ -52,7 +55,9 @@ function Alert(props) {
 
     setOpen(false);
   };
-
+  if (!props.isAuth) {
+    return <Redirect to={'/login'}/>
+}
   return (
     <>
      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>

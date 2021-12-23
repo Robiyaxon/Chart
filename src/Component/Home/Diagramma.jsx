@@ -5,6 +5,7 @@ import faker from 'faker';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import TrendingUpSharpIcon from '@material-ui/icons/TrendingUpSharp';
 import CircleChart from './CircleChart/CircleChart';
+import { Redirect } from 'react-router-dom';
 
 export const options = {
   responsive: true,
@@ -46,11 +47,14 @@ const map4 = map3.map(a => <div key={a.id} className={style.blockBox}>
     </div>
 
 
-    <h1>{a.summa}</h1>
+    <h1 style={{color:"white"}}>{a.summa}</h1>
   </div>
   <BarChartIcon style={{color:"yellow"}} />
 </div>)
-export function Diagramma() {
+export function Diagramma(props) {
+  if (!props.isAuth) {
+    return <Redirect to={'/login'}/>
+}
   return (
     <>
       <div className={style.BlockBody}>

@@ -33,8 +33,8 @@ export default function SimpleBadge() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} style={{color:"white",backgroundColor:"#595f663d"}}> Xabar yo`q!</MenuItem>
-        <MenuItem onClick={handleClose}  style={{color:"white",backgroundColor:"#595f663d"}}>Eslatma!</MenuItem>
+        <MenuItem onClick={handleClose} style={{color:"white"}}> Xabar yo`q!</MenuItem>
+        <MenuItem onClick={handleClose}  style={{color:"white"}}>Eslatma!</MenuItem>
       </Menu>
      <div className={classes.root}>
       <Badge badgeContent={2} color="secondary">

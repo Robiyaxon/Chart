@@ -1,12 +1,20 @@
 import React from 'react';
 import "./App.css"
-import Navbar23 from './Component/Navbar23';
 import { BackToTop } from './BackToTop';
+import LoginConatiner from './Component/LoginForm/LoginContainer';
+import NavbarContainer from './Component/NavbarContainer';
 const App = () => {
+  return (
+   <App2/>
+  );
+};
+const App2 = () => {
   return (
     <div>
       < BackToTop/>
-       <Navbar23/>
+      
+      <NavbarContainer/>
+      <LoginConatiner/>
     </div>
   );
 };

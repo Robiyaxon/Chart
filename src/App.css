@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   width: 3px !important;
 }
@@ -23,85 +26,28 @@ body {
 .jss9 {
 border: none !important;
 }
-
-/* 
-
-
-.MuiDivider-root {
-  border: 2px solid red;
+.ant-form-item-label > label{
+  color: white;
+  font-size: 21px;
 }
-
-
-
-.makeStyles-drawerOpen-7 {
-  height: 100% !important;
-  
+.MuiDivider-root{
+  display: none !important;
 }
-
-.MuiList-root {
-  height: 100%;
- 
+.makeStyles-drawerClose-9, .makeStyles-drawerOpen-8, .makeStyles-drawerOpen-48, .makeStyles-drawerOpen-18{
+  overflow: hidden !important;
 }
-
-@media(min-width:0) and (max-width:800.9px) {
-
-  .makeStyles-content-10 {
-    position: absolute !important;
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    padding: 0 !important;
-  }
-
-  .makeStyles-drawerClose-8 {
-    position: absolute !important;
-  }
-  .makeStyles-drawerOpen-7 {
-    width: 97% !important;
-    height: auto;
-  }
-
-  .MuiTypography-paragraph{
-    width: 0;
-  } */
-/* .MuiToolbar-regular {
-    position: absolute !important;
-    border: 2px solid red;
-    justify-content: space-evenly !important;
-  } */
-/*
-  .makeStyles-appBarShift-3 {
-    width: 0 !important;
-  }
-
-  .makeStyles-toolbar-9,
-  .jss9 {
-    padding: 0 1rem;
-  }
-
-  .makeStyles-orange-13,
-  .jss13 {
-    display: none !important;
-  }
-
-  .MuiDrawer-paperAnchorTop {
-    width: 100%;
-  }
-
-  .MuiToolbar-regular {
-    margin: 0.5rem 0;
-  }
-
-  .makeStyles-menuButton-4,
-  .jss4 {
-    margin-right: 0 !important;
-  }
-  .widthNavbar .MuiToolbar-regular{
-    width: 0 !important;
-}*/
+.MuiMenu-paper{
+  background: none !important;
+}
+.MuiMenu-list{
+  background-color: #383c41 !important;
+}
 @media (min-width:0) and (max-width:800.9px) {
   .makeStyles-content-10 {
     padding: 5px !important;
+  }
+  .makeStyles-drawerClose-19{
+    position: absolute !important;
   }
   .chartjs-render-monitor{
     width: 100% !important;
@@ -115,22 +61,4 @@ border: none !important;
   .makeStyles-content-11{
     padding: 0 !important;
   }
-  /* .makeStyles-drawerClose-8 {
-    position: absolute !important;
-    border: 2px solid red;
-  }
-
-  .makeStyles-drawerOpen-7 {
-    width: 80% !important;
-    border: 2px solid rgb(82, 18, 18);
-  }.makeStyles-content-11 {
-    padding: 0 !important;
-    }
-
-
-
-
-  .MuiToolbar-root {
-    position: absolute !important;
-  } */
 }

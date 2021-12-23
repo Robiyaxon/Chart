@@ -4,7 +4,9 @@
           margin-top: 2rem;
           border-top: 2px solid grey;
 }
-
+.title{
+          color: #fff;
+}
 @media (min-width:0) and (max-width:300.9px){
           .smNone{
                     display: none;

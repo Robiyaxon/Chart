@@ -1,6 +1,6 @@
 .logo {
           color: gold;
-
+margin: auto 0;
           font-family: "Public Sans", sans-serif;
           line-height: 24px;
           justify-content: space-evenly;
@@ -23,6 +23,8 @@
 }
 
 .userBlock h2 {
+     height: 60%;
+    margin: auto 0;
           width: 20%;
           border-radius: 50%;
           font-family: 'Courier New', Courier, monospace;

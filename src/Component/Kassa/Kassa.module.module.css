@@ -111,6 +111,7 @@
 
 .name {
     width: 20%;
+    color: #fff;
     margin-left: 10px;
     text-align: center;
     overflow-wrap: anywhere;
@@ -120,16 +121,19 @@
     text-align: center;
     overflow-wrap: anywhere;
     width: 20%;
+    color: #fff;
 }
 
 .price {
     width: 15%;
+    color: #fff;
     text-align: center;
     overflow-wrap: anywhere;
 
 }
 
 .comment {
+    color: #fff;
     overflow-wrap: anywhere;
     width: 25%;
     text-align: center;
@@ -138,6 +142,7 @@
 }
 
 .status {
+    color: #fff;
     width: 10%;
     text-align: center;
     overflow-wrap: anywhere;
@@ -188,15 +193,4 @@
         padding: 10px 10px 5px;
         font-size: 14px;
     }
-    /* .th {
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        width: 100%;
-        height: 56px;
-        margin: 0 auto;
-    }
-    .report{
-        width: 100%;
-    } */
 }

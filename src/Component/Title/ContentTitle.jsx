@@ -5,7 +5,11 @@ import pantone from "../../picture/pantone.jpg"
 import baby from "../../picture/baby.jpg"
 import "./Flickity.css";
 import Flickity from "react-flickity-component";
-const ContentTitle = () => {
+import { Redirect } from 'react-router-dom';
+const ContentTitle = (props) => {
+  if (!props.isAuth) {
+    return <Redirect to={'/login'}/>
+}
   return (
     <div className={style.wrapper}>
       <div className={style.Title}>

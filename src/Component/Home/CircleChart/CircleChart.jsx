@@ -20,7 +20,7 @@ datasets: [
 function CircleChart() {
   return (
       <div>
-                <h2 className={moduleName.title}>Xodimlar</h2>
+                <h2 className={moduleName.title} >Xodimlar</h2>
         <Doughnut data={data} />
         <div className={moduleName.smNone}>
                   <p>Web</p>
@@ -32,5 +32,4 @@ function CircleChart() {
       </div>
   );
 }
-          // labels: ["Frontend", "Backend", "IOS", "Android", "Design"],
 export default CircleChart

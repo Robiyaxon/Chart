@@ -8,6 +8,7 @@ let mapsStateToProps=(state)=>{
     addNewProduct:state.buyurtma.addNewProduct,
     addNewPrice:state.buyurtma.addNewPrice,
     addNewComment:state.buyurtma.addNewComment,
-    report:state.buyurtma.report
+    report:state.buyurtma.report,
+    isAuth: state.login.isAuth
   }}
   export default compose( connect(mapsStateToProps, {SetNameAC, SetProductAC, SetPriceAC, SetCommentAC, AddNewReportAC}) )(Buyurtmalar)
