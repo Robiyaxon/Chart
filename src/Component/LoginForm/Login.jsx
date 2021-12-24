@@ -1,48 +1,12 @@
-// import React from 'react';
-// import { Redirect } from 'react-router-dom';
-// const Login = (props) => {
-//       const AddName = (event) => {
-//             let text = event.target.value
-//             props.upDateNewNameAC(text)
-//       }
-//       const AddEmail = (event) => {
-//             let text = event.target.value
-//             props.upDateNewEmailAC(text)
-//       }
-//       const AddPassword = (event) => {
-//             let text = event.target.value
-//             props.upDateNewPasswordAC(text)
-//       }
-
-//       const send = () => {
-//             console.log("name:" + " '" + props.name + "' " + "email:" + "'" +  props.email + " '" + "password:" + "' " + props.password + "'")
-//       }
-//       if (props.isAuth) {
-//             return <Redirect to={'/Chart'}/>
-//         }
-//       return (
-//             <div>
-//                   <input onChange={AddName} value={props.name} 
-//                   type="text" placeholder='Name*' />
-//                   <input onChange={AddEmail} value={props.email} 
-//                   type="text" placeholder='Email*' />
-//                   <input onChange={AddPassword} value={props.password} type="password" placeholder='Password*' />
-//                   <button onClick={send}>Kirish</button>
-//             </div>
-//       )
-// }
-
-// export default Login
-import { Button, Form, Input, Row } from 'antd';
+import { Button, Form, Input, Row } from 'antd'
 import style from "./Login.module.css"
-import Layout from 'antd/lib/layout/layout';
-import { rules } from './../../Utils/Rules';
-import { useDispatch } from 'react-redux';
-import { AuthActionCreators } from '../../Redux/Login/action-creators';
-import { Redirect } from 'react-router-dom';
-import Checkbox from 'antd/lib/checkbox/Checkbox';
+import logo from "../../picture/logo24.png"
+import { UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons';
+import Layout from 'antd/lib/layout/layout'
+import { rules } from './../../Utils/Rules'
+import { Redirect } from 'react-router-dom'
+import Checkbox from 'antd/lib/checkbox/Checkbox'
 const LoginForm = (props) => {
-      const dispatch = useDispatch()
       const AddName = (event) => {
             let text = event.target.value
             props.prop.upDateNewNameAC(text)
@@ -55,49 +19,51 @@ const LoginForm = (props) => {
             let text = event.target.value
             props.prop.upDateNewPasswordAC(text)
       }
-
-      const send = () => {
-            if( props.prop.name!=="" && props.prop.email!=="" && props.prop.password!==""){
-             props.prop.UpdateIsAuthAC(true)
-                
-            }
-            
-      }
-      function submit() {
-            dispatch(AuthActionCreators.login("", ""))
-      }
       if (props.prop.isAuth) {
-            return <Redirect to={'/Chart'}/>
-        }
+            return <Redirect to={'/Chart'} />
+      }
+      const send = () => {
+            if (props.prop.name != "" && props.prop.email != "" && props.prop.password != "") {
+                  props.prop.UpdateIsAuthAC(true);
+                  props.prop.upDateNewPasswordAC("")
+                  props.prop.upDateNewEmailAC("")
+                  props.prop.upDateNewNameAC("")
+            }
+      }
       return (
-            
-            <Form onFinish={submit}  className={style.Wrapper} >
-                  <Form.Item className={style.Input1} onChange={AddName} value={props.prop.name} label="Name " name="UserName" rules={[rules.required("Please input name!")]}>
-                        <Input />
-                  </Form.Item>
-                  <Form.Item className={style.Input1} onChange={AddEmail} value={props.prop.email} label="Email" name="Email" rules={[rules.required("Please input Email!")]}>
-                        <Input/>
-                  </Form.Item>
-                  <Form.Item className={style.Input1} onChange={AddPassword} value={props.prop.password} label="Parol" name="password" rules={[rules.required("Please input password!")]}>
-                  <Input.Password />
-                  </Form.Item>
-                  <Form.Item
-        name="remember"
-        valuePropName="checked"
-        wrapperCol={{
-          offset: 8,
-          span: 16,
-        }}
-      >
-        <Checkbox style={{color:"white"}}>Remember me</Checkbox>
-      </Form.Item>
-                  <Form.Item className={style.Input1} wrapperCol={{ offset: 8, span: 16 }}>
-                        <Button onClick={send} type='primary' htmlType='submit'>
-                              Kirish
-                        </Button>
-                  </Form.Item>
+            <>
+                  <Form className={style.Wrapper}>
+                        <h1>Zapraszamy</h1>
+                        <div>
+                              <Form.Item className={style.Input1} onChange={AddName} value={props.prop.name} label="Name " name="UserName" rules={[rules.required("Please input name!")]}>
+                                    <Input prefix={<UserOutlined className="site-form-item-icon" />} />
+                              </Form.Item>
+                              <Form.Item className={style.Input1} onChange={AddEmail} value={props.prop.email} label="Email" name="Email" rules={[rules.required("Please input Email!")]}>
+                                    <Input prefix={<MailOutlined className="site-form-item-icon" />} />
+                              </Form.Item>
+                              <Form.Item className={style.Input1} onChange={AddPassword} value={props.prop.password} label="Parol" name="password" rules={[rules.required("Please input password!")]}>
+                                    <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} />
+                              </Form.Item>
+                              <Form.Item >
+                                    <Form.Item name="remember" valuePropName="checked" noStyle>
+                                          <Checkbox>Remember me</Checkbox>
+                                    </Form.Item>
 
-            </Form>
+                                    <a className="login-form-forgot" href="">
+                                          Forgot password
+                                    </a>
+                              </Form.Item>
+                              <Form.Item className={style.Input1} wrapperCol={{ offset: 8, span: 16 }}>
+                                    <Button className={style.button} onClick={send} type='primary' htmlType='submit'>
+                                          Kirish
+                                    </Button>
+                              </Form.Item>
+                        </div>
+
+                        <img src={logo} alt="" />
+                  </Form>
+            </>
+
       )
 }
 const Login = (props) => {
@@ -105,10 +71,11 @@ const Login = (props) => {
             <div className={style.Login}>
                   <Layout style={{ backgroundColor: "transparent", color: "white" }}>
                         <Row justify='center' align='middle'>
-                              <LoginForm prop = {props} />
+                              <LoginForm prop={props} />
+
                         </Row>
                   </Layout>
             </div>
       )
 }
-export default Login;
+export default Login
