@@ -4,7 +4,7 @@
 
 .Wrapper {
           border-radius: 20px;
-          padding: 4rem;
+          padding: 3rem;
           box-sizing: border-box;
           display: flex !important;
           align-items: center !important;
@@ -18,7 +18,7 @@
          
 }
 img{
-          width: 350px;
+          width: 300px;
           object-fit: contain;
 }
 .Input1 input{
