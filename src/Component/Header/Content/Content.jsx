@@ -13,14 +13,12 @@ export function Content(classes, open, props) {
     <React.Fragment >
       <main className={a + " " + classes.content}  >
         <div className={classes.toolbar} />
-        <div>
           <TitlecONTAINERJSX isAuth={props.isAuth} />
           <Route path='/Chart' exact render={() => <DiagrammaContainer />} />
           <Route path='/buyurtmalar' render={() => <BuyurtmalarComponent />} />
           <Route path='/kassa' render={() => <KassaContainer />} />
           <Route path='/xodimlar' render={() => <XodimlarContainer />} />
           <Route path='/chiqish' render={() => <LogoutContainer/>} />
-        </div>
       </main>
     </React.Fragment>
   )

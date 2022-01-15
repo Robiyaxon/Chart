@@ -24,10 +24,6 @@ import { NavLink} from 'react-router-dom';
 import { Header } from './Navbar/Header';
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    backgroundColor: "#161c24",
-  },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     backgroundColor: "#161c24",

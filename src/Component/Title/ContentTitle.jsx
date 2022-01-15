@@ -1,10 +1,7 @@
 import React from 'react';
 import style from "./Title.module.css"
 import Button from '@material-ui/core/Button'
-import pantone from "../../picture/pantone.jpg"
-import baby from "../../picture/baby.jpg"
-import "./Flickity.css";
-import Flickity from "react-flickity-component";
+import baby from "../../picture/title.jpg"
 import { Redirect } from 'react-router-dom';
 const ContentTitle = (props) => {
   if (!props.isAuth) {
@@ -26,19 +23,11 @@ const ContentTitle = (props) => {
         <div>
         </div>
       </div>
-      <Carousel23 />
+      <div className={style.CarouselNamePage} >
+        <img alt="" src={baby} />
+      </div>
+      
     </div>
   );
 };
-function Carousel23() {
-  return (
-    <div className={style.CarouselNamePage}>
-      <Flickity>
-        <img alt="" src={pantone} />
-        <img alt="" src={baby} />
-      </Flickity>
-    </div>
-
-  );
-}
 export default ContentTitle;

@@ -1,21 +1,19 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import "./App.css"
 import { BackToTop } from './BackToTop';
 import LoginConatiner from './Component/LoginForm/LoginContainer';
 import NavbarContainer from './Component/NavbarContainer';
+import LoginUserContainer from './Component/LoginForm/LoginUser';
 const App = () => {
   return (
-   <App2/>
-  );
-};
-const App2 = () => {
-  return (
     <div>
-      < BackToTop/>
-      
-      <NavbarContainer/>
-      <LoginConatiner/>
-    </div>
+    {/* < BackToTop/> */}
+    <NavbarContainer/>
+  
+    <Route path='/login' render={() => <LoginConatiner/>}/>
+    <Route path='/loginme' render={() => <LoginUserContainer />} />
+  </div>
   );
 };
 export default App;

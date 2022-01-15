@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { upDateNewNameAC, upDateNewEmailAC, upDateNewPasswordAC, UpdateIsAuthAC } from './../../Redux/LoginReducer';
+import { upDateNewNameAC, upDateNewEmailAC, upDateNewPasswordAC, UpdateIsAuthAC, LoginThunk } from './../../Redux/LoginReducer';
 import Login from './Login';
 
 let mapsStateToProps = (state) => {
@@ -12,4 +12,4 @@ let mapsStateToProps = (state) => {
 }
 
 
-export default connect(mapsStateToProps, {upDateNewNameAC, upDateNewEmailAC, upDateNewPasswordAC, UpdateIsAuthAC})(Login)
+export default connect(mapsStateToProps, {upDateNewNameAC, upDateNewEmailAC, upDateNewPasswordAC, UpdateIsAuthAC, LoginThunk})(Login)
